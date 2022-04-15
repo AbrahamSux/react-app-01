@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 // import App from './App';
 
 import Example01 from './components/Example01'
+import Example02 from './components/Example02'
 
 /* const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,4 +13,4 @@ root.render(
   </React.StrictMode>
 ); */
 
-ReactDOM.render(Example01, document.getElementById('root'))
+ReactDOM.render(Example02, document.getElementById('root'))
