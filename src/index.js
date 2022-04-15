@@ -7,6 +7,7 @@ import Example01 from './components/Example01'
 import Example02 from './components/Example02'
 import Example03 from './components/Example03'
 import Example04 from './components/Example04'
+import Example05 from './components/Example05'
 
 /* const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,4 +16,4 @@ root.render(
   </React.StrictMode>
 ); */
 
-ReactDOM.render(<Example04/>, document.getElementById('root'))
+ReactDOM.render(<Example05/>, document.getElementById('root'))
