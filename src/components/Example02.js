@@ -1,3 +1,6 @@
+/**
+ * Ejemplo implementado el uso de elementos.
+ */
 import React from "react";
 
 /**

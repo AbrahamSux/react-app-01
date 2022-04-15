@@ -1,3 +1,6 @@
+/**
+ * Ejemplo implementado el uso de componentes.
+ */
 import React from "react";
 
 const TarjetaFruta = () => (
