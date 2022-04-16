@@ -9,6 +9,7 @@ import Example03 from './components/Example03'
 import Example04 from './components/Example04'
 import Example05 from './components/Example05'
 import Example06 from './components/Example06'
+import ObjectAssign from './components/ObjectAssign'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
