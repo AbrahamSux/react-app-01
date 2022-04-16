@@ -33,3 +33,30 @@ const social = {
 }
 
 console.log(resultado)
+
+
+
+/**
+ * Utilizando arrays/listas.
+ */
+const frutasVerdes = [
+    'kiwi',
+    'uva',
+    'limon'
+]
+
+const frutasRojas = [
+    'manzana',
+    'fresa',
+    'sandia'
+]
+
+const frutasCombinadas = [
+    'pera',
+    ...frutasVerdes,
+    'mango',
+    ...frutasRojas,
+    'papaya'
+]
+
+console.log(frutasCombinadas)
