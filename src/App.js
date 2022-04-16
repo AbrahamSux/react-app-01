@@ -2,6 +2,7 @@ import React from "react";
 import TarjetaFruta from './components/TarjetaFruta'
 import Contador from './components/Contador'
 import GatoApp from './components/Gato'
+import EventosApp from './components/Eventos'
 
 
 
@@ -19,6 +20,9 @@ function App() {
      <br/>
      <hr/>
      <GatoApp />
+     <br/>
+     <hr/>
+     <EventosApp />
    </div>
   );
 }

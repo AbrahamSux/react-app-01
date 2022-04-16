@@ -8,6 +8,7 @@ class TarjetaFruta extends React.Component {
   }
 
 
+  
   // ARROW FUNCTIONS
 
   agregar = () => this.setState({
@@ -60,8 +61,8 @@ class TarjetaFruta extends React.Component {
         <hr/>
         <p>Precio de Venta: ${this.props.price}</p>
         <p>
-            Total: ${this.props.price * this.state.cantidad}
-          </p>
+          Total: ${this.props.price * this.state.cantidad}
+        </p>
       </div>
     )
   }
