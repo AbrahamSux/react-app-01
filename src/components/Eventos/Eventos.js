@@ -14,7 +14,10 @@ class EventosApp extends Component {
 
     state = {
         x: 0,
-        y: 0
+        y: 0,
+
+        text: '',
+        evento: ''
     }
 
 
@@ -30,6 +33,15 @@ class EventosApp extends Component {
 
     mostrarAlerta = () => {
         alert('Hola Mundo...')
+    }
+
+    manejadorInput = (event) => {
+        console.log(event.target.value)
+
+        this.setState({
+            text: event.target.value,
+            evento: event.type
+        })
     }
 
 
@@ -51,6 +63,18 @@ class EventosApp extends Component {
                 <hr/>
                 <div>X = {this.state.x}</div>
                 <div>Y = {this.state.y}</div>
+                <br/>
+                <hr/>
+                <div>
+                    <input 
+                        type="text" 
+                        onChange={this.manejadorInput}
+                        onCopy={this.manejadorInput}
+                        onPaste={this.manejadorInput}
+                    />
+                    <h1> {this.state.text} </h1>
+                    <h2> {this.state.evento} </h2>
+                </div>
             </div>
         )
     }
