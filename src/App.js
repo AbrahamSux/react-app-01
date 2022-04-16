@@ -1,5 +1,5 @@
 import React from "react";
-import TarjetaFruta from "./components/TarjetaFruta/TarjetaFruta";
+import TarjetaFruta from './components/TarjetaFruta'
 
 
 
