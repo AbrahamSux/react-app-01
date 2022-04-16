@@ -1,4 +1,4 @@
-.TarjetaFruta {
+.card {
     border: 1px solid black;
     margin-bottom: 1em;
     border-radius: 0.5em;
@@ -9,7 +9,7 @@
     transition: all 400ms ease-out;
 }
 
-.TarjetaFruta-activa {
+.card-active {
     /* Cambia el fondo a purpura degradado */
     background: linear-gradient(45deg, black, #4a02f7);
     /* Cambia el color de las letras a blaco para que no se pierdan entre el fondo purpura */

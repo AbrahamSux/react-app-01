@@ -1,5 +1,5 @@
 import React from "react";
-import './TarjetaFruta.css'
+import styles from './TarjetaFruta.module.css'
 
 class TarjetaFruta extends React.Component {
 
@@ -18,6 +18,12 @@ class TarjetaFruta extends React.Component {
     this.setState({
       cantidad: this.state.cantidad - 1
     })
+
+    if (this.state.cantidad <= 0) {
+      this.setState({
+        cantidad: 0
+      })
+    }
   }
 
   limpiar = () => {
@@ -38,8 +44,11 @@ class TarjetaFruta extends React.Component {
    render() {
 
     const hasItems = this.state.cantidad > 0
-    const activeClass = hasItems ? 'TarjetaFruta-activa' : ''
-    const clases = `TarjetaFruta ${activeClass}`
+    
+    // Utilizado para nombres de estilos de más de una palabra, ejemplo: card-active
+    const activeClass = hasItems ? styles['card-active'] : ''
+    // Utilizado para un nombres de estilo unico, ejemplo: card
+    const clases = styles.card +' '+ activeClass
 
     return (
       <div className={ clases }>
