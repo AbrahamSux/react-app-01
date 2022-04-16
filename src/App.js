@@ -1,6 +1,7 @@
 import React from "react";
 import TarjetaFruta from './components/TarjetaFruta'
 import Contador from './components/Contador'
+import GatoApp from './components/Gato'
 
 
 
@@ -15,6 +16,9 @@ function App() {
      <br/>
      <hr/>
      <Contador />
+     <br/>
+     <hr/>
+     <GatoApp />
    </div>
   );
 }
