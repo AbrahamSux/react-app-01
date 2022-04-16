@@ -3,6 +3,7 @@ import TarjetaFruta from './components/TarjetaFruta'
 import Contador from './components/Contador'
 import GatoApp from './components/Gato'
 import EventosApp from './components/Eventos'
+import PersistenciaEventosApp from './components/EventosII'
 
 
 
@@ -23,6 +24,9 @@ function App() {
      <br/>
      <hr/>
      <EventosApp />
+     <br/>
+     <hr/>
+     <PersistenciaEventosApp />
    </div>
   );
 }
