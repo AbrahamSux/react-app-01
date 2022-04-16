@@ -1,10 +1,17 @@
+import React from "react";
+import TarjetaFruta from "./components/TarjetaFruta/TarjetaFruta";
 
+
+
+var frutaExotica = 'Fruta del Dragón'
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <div>
+     <TarjetaFruta name='Naranja' price={6.00}  />
+     <TarjetaFruta name={'Sandia'} price={25.00}/>
+     <TarjetaFruta name={`${frutaExotica}`} price={55.50} />
+   </div>
   );
 }
 

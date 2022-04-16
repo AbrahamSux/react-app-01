@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import ReactDOM from 'react-dom/client';
-// import App from './App';
+import App from './App';
 
 import Example01 from './components/Example01'
 import Example02 from './components/Example02'
@@ -17,4 +17,4 @@ root.render(
   </React.StrictMode>
 ); */
 
-ReactDOM.render(<Example06/>, document.getElementById('root'))
+ReactDOM.render(<App/>, document.getElementById('root'))
