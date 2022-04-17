@@ -4,7 +4,8 @@ import Contador from './components/Contador'
 import GatoApp from './components/Gato'
 import EventosApp from './components/Eventos'
 import PersistenciaEventosApp from './components/EventosII'
-import EventoPersonalizado from './components/EventosIII';
+import EventoPersonalizado from "./components/EventosIII/EventoPersonalizado";
+import SaludoApp from "./components/EventosIII/EventoRenderizadoCondicional";
 
 
 
@@ -31,6 +32,9 @@ function App() {
      <br/>
      <hr/>
      <EventoPersonalizado />
+     <br/>
+     <hr/>
+     <SaludoApp />
    </div>
   );
 }
