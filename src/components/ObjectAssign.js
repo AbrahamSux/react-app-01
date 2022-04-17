@@ -36,4 +36,8 @@ const resultado = Object.assign(
     }
 )
 
+console.log('>>>>> INICIA  : PROCESO OBJECT ASSIGN ... ')
+
 console.log(resultado)
+
+console.log('<<<<< TERMINA : PROCESO OBJECT ASSIGN. ')

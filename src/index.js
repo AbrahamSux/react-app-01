@@ -11,6 +11,7 @@ import Example05 from './components/Example05'
 import Example06 from './components/Example06'
 import ObjectAssign from './components/ObjectAssign'
 import Spread from './components/Spread'
+import Destructuracion from './components/Elementos/Destructuracion'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

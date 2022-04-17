@@ -32,8 +32,6 @@ const social = {
     }
 }
 
-console.log(resultado)
-
 
 
 /**
@@ -59,4 +57,10 @@ const frutasCombinadas = [
     'papaya'
 ]
 
+console.log('>>>>> INICIA  : PROCESO OPERADOR SPREAD ... ')
+
+console.log(resultado)
+
 console.log(frutasCombinadas)
+
+console.log('<<<<< TERMINA : PROCESO OPERADOR SPREAD. ')

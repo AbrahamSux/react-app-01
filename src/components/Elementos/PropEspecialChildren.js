@@ -18,9 +18,12 @@ class PropChindrenApp extends Component {
      * @returns El elemento construido.
      */
     render () {
+
+        const {uiColor} = this.state
+
         return (
             <div>
-                <Title uiColor={this.state.uiColor}>
+                <Title uiColor={uiColor}>
                     Super <em>Ninja</em>
                 </Title>
             </div>
@@ -37,10 +40,12 @@ const Title = (props) => {
 
     console.log(props)
 
+    const { uiColor } = props
+
     const styles = {
         padding: '0.3em',
         color: '#FFF',
-        background: props.uiColor,
+        background: uiColor,
         borderRadius: '0.3em',
         textAlign: 'center',
         fontSize: '50px'
