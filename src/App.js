@@ -2,10 +2,10 @@ import React from "react";
 import TarjetaFruta from './components/TarjetaFruta'
 import Contador from './components/Contador'
 import GatoApp from './components/Gato'
-import EventosApp from './components/Eventos'
-import PersistenciaEventosApp from './components/EventosII'
-import EventoPersonalizado from "./components/EventosIII/EventoPersonalizado";
-import SaludoApp from "./components/EventosIII/EventoRenderizadoCondicional";
+import EventosApp from "./components/Eventos/Eventos";
+import PersistenciaEventosApp from "./components/Eventos/PersistenciaEventos";
+import EventoPersonalizado from "./components/Eventos/EventoPersonalizado";
+import SaludoApp from "./components/Eventos/EventoRenderizadoCondicional";
 
 
 
