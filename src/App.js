@@ -8,7 +8,7 @@ import EventoPersonalizado from "./components/Eventos/EventoPersonalizado";
 import SaludoApp from "./components/Eventos/EventoRenderizadoCondicional";
 import Inyectando from "./components/Eventos/InyectandoHTML";
 import PropChindrenApp from "./components/Elementos/PropEspecialChildren";
-
+import FragmentApp from "./components/Elementos/Fragments";
 
 
 var frutaExotica = 'Fruta del Dragón'
@@ -41,6 +41,9 @@ function App() {
      <br/>
      <hr/>
      <PropChindrenApp />
+     <br/>
+     <hr/>
+     <FragmentApp />
    </div>
   );
 }
