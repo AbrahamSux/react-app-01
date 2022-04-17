@@ -6,6 +6,7 @@ import EventosApp from "./components/Eventos/Eventos";
 import PersistenciaEventosApp from "./components/Eventos/PersistenciaEventos";
 import EventoPersonalizado from "./components/Eventos/EventoPersonalizado";
 import SaludoApp from "./components/Eventos/EventoRenderizadoCondicional";
+import Inyectando from "./components/Eventos/InyectandoHTML";
 
 
 
@@ -35,6 +36,7 @@ function App() {
      <br/>
      <hr/>
      <SaludoApp />
+     <Inyectando />
    </div>
   );
 }
