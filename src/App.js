@@ -11,6 +11,7 @@ import PropChindrenApp from "./components/Elementos/PropEspecialChildren";
 import FragmentApp from "./components/Elementos/Fragments";
 import PropTypesApp from "./components/Elementos/Prop-types";
 import ListaElementos from "./components/Listas/ListaElementos";
+import ListaObjeto from "./components/Listas/ListaObjetos";
 
 
 var frutaExotica = 'Fruta del Dragón'
@@ -52,6 +53,9 @@ function App() {
      <br/>
      <hr/>
      <ListaElementos />
+     <br/>
+     <hr/>
+     <ListaObjeto />
    </div>
   );
 }
