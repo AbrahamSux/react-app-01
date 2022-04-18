@@ -2,16 +2,35 @@ import React, { Component } from "react";
 import PropTypes from 'prop-types';
 
 
+const noop = () => {}
+
+
 
 // COMPONENTES CON ESTADO
 
 class Profile extends Component {
 
+  // Validación de propiedades.
   static propTypes = {
     name: PropTypes.string.isRequired,
     bio: PropTypes.string.isRequired,
     email: PropTypes.string,
     age: PropTypes.number.isRequired
+  }
+
+  // Propiedades por default.
+  static defaultProps = {
+    bio: 'Soy un desarrollador FullStack',
+    onHello: noop
+  }
+
+
+
+  // ARROW FUNCTIONS
+
+  saludar = () => {
+    console.log(this.props)
+    this.props.onHello()
   }
 
 
@@ -36,6 +55,10 @@ class Profile extends Component {
         <a href={`mailto: ${email}`}>
           {email}
         </a>
+        <br/><br/>
+        <button onClick={this.saludar}>
+          Saludar
+        </button>
       </div>
     )
   }
@@ -63,7 +86,6 @@ class PropTypesApp extends Component {
       <div>
         <Profile
           name={'Abraham Juárez'}
-          bio={'Soy un desarrollador FullStack'}
           email={'abraham.juarez@gmail.com'}
           age={28}
         />
