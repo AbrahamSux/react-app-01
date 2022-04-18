@@ -9,6 +9,7 @@ import SaludoApp from "./components/Eventos/EventoRenderizadoCondicional";
 import Inyectando from "./components/Eventos/InyectandoHTML";
 import PropChindrenApp from "./components/Elementos/PropEspecialChildren";
 import FragmentApp from "./components/Elementos/Fragments";
+import PropTypesApp from "./components/Elementos/Prop-types";
 
 
 var frutaExotica = 'Fruta del Dragón'
@@ -44,6 +45,9 @@ function App() {
      <br/>
      <hr/>
      <FragmentApp />
+     <br/>
+     <hr/>
+     <PropTypesApp />
    </div>
   );
 }
