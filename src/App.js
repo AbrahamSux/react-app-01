@@ -12,6 +12,7 @@ import FragmentApp from "./components/Elementos/Fragments";
 import PropTypesApp from "./components/Elementos/Prop-types";
 import ListaElementos from "./components/Listas/ListaElementos";
 import ListaObjeto from "./components/Listas/ListaObjetos";
+import PropiedadObjeto from "./components/Listas/PropiedadesObjeto";
 
 
 var frutaExotica = 'Fruta del Dragón'
@@ -56,6 +57,9 @@ function App() {
      <br/>
      <hr/>
      <ListaObjeto />
+     <br/>
+     <hr/>
+     <PropiedadObjeto />
    </div>
   );
 }
