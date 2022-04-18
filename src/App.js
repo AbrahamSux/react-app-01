@@ -10,6 +10,7 @@ import Inyectando from "./components/Eventos/InyectandoHTML";
 import PropChindrenApp from "./components/Elementos/PropEspecialChildren";
 import FragmentApp from "./components/Elementos/Fragments";
 import PropTypesApp from "./components/Elementos/Prop-types";
+import ListaElementos from "./components/Listas/ListaElementos";
 
 
 var frutaExotica = 'Fruta del Dragón'
@@ -48,6 +49,9 @@ function App() {
      <br/>
      <hr/>
      <PropTypesApp />
+     <br/>
+     <hr/>
+     <ListaElementos />
    </div>
   );
 }
