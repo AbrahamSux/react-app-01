@@ -39,7 +39,9 @@ class PropiedadObjeto extends Component {
 
                 <ul>
                     {keys.map(key => (
-                        <li><strong>{ key }</strong> : { user[key] }</li>
+                        <li key={key}>
+                            <strong>{ key }</strong> : { user[key] }
+                        </li>
                     ))}
                 </ul>
             </div>

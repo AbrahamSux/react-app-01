@@ -13,6 +13,7 @@ import PropTypesApp from "./components/Elementos/Prop-types";
 import ListaElementos from "./components/Listas/ListaElementos";
 import ListaObjeto from "./components/Listas/ListaObjetos";
 import PropiedadObjeto from "./components/Listas/PropiedadesObjeto";
+import PropKeyApp from "./components/Listas/PropKey";
 
 
 var frutaExotica = 'Fruta del Dragón'
@@ -60,6 +61,9 @@ function App() {
      <br/>
      <hr/>
      <PropiedadObjeto />
+     <br/>
+     <hr/>
+     <PropKeyApp />
    </div>
   );
 }

@@ -57,13 +57,14 @@ class ListaObjeto extends Component {
                 <div>
                     {this.state.products.map((product) => {
                         return (
-                            <div>
+                            <div key={product.id}>
                                 ${product.price} - {product.name}
 
                                 <div>
                                     {product.colors.map((color) => {
                                         return (
-                                            <span
+                                            <span 
+                                                key={color}
                                                 style={{
                                                     width: "13px",
                                                     height: "13px",
