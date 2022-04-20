@@ -18,6 +18,7 @@ import IterarComponentesApp from "./components/Listas/IteracionComponentes";
 import SelectDatoEnListaApp from "./components/Listas/SelectDatoEnLista";
 import RefsApp from "./components/Refs/RefsApp";
 import IntegrarLibreriaApp from "./components/Refs/IntegrarLibrerias";
+import ForwardrefApp from "./components/Refs/RefConForwardref";
 
 
 var frutaExotica = 'Fruta del Dragón'
@@ -77,6 +78,9 @@ function App() {
      <br/>
      <hr/>
      <IntegrarLibreriaApp />
+     <br/>
+     <hr/>
+     <ForwardrefApp />
      <br/>
      <hr/>
      <IterarComponentesApp />

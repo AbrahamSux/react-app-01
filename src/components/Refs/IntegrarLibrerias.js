@@ -8,7 +8,7 @@ let myChart;
 
 
 
-// COMPONENTES CON ESTADO
+// COMPONENTES BASADOS EN CLASES
 
 class IntegrarLibreriaApp extends Component {
 
