@@ -16,6 +16,7 @@ import PropiedadObjeto from "./components/Listas/PropiedadesObjeto";
 import PropKeyApp from "./components/Listas/PropKey";
 import IterarComponentesApp from "./components/Listas/IteracionComponentes";
 import SelectDatoEnListaApp from "./components/Listas/SelectDatoEnLista";
+import RefsApp from "./components/Refs/RefsApp";
 
 
 var frutaExotica = 'Fruta del Dragón'
@@ -71,7 +72,11 @@ function App() {
      <SelectDatoEnListaApp />
      <br/>
      <hr/>
+     <RefsApp />
+     <br/>
+     <hr/>
      <IterarComponentesApp />
+     
    </div>
   );
 }
