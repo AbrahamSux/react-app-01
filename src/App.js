@@ -19,6 +19,8 @@ import SelectDatoEnListaApp from "./components/Listas/SelectDatoEnLista";
 import RefsApp from "./components/Refs/RefsApp";
 import IntegrarLibreriaApp from "./components/Refs/IntegrarLibrerias";
 import ForwardrefApp from "./components/Refs/RefConForwardref";
+import InputNoControladoApp from "./components/ManejoFormularios/InputsNoControlados";
+
 
 
 var frutaExotica = 'Fruta del Dragón'
@@ -81,6 +83,9 @@ function App() {
      <br/>
      <hr/>
      <ForwardrefApp />
+     <br/>
+     <hr/>
+     <InputNoControladoApp />
      <br/>
      <hr/>
      <IterarComponentesApp />
