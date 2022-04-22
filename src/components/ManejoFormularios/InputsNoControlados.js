@@ -32,9 +32,9 @@ class InputNoControladoApp extends Component {
                 <h1>
                     Inputs No controlados Refs <Unicorn />
                 </h1>
-                <InputNoControlado 
-                    onSend={this.onSend}
-                />
+                <InputNoControlado onSend={this.onSend} />
+                <br/>
+                <InputNoControladoForm onSend={this.onSend} />
             </div>
         )
     }
@@ -87,6 +87,50 @@ class InputNoControlado extends Component {
                     Enviar
                 </button>
             </div>
+        )
+    }
+
+}
+
+class InputNoControladoForm extends Component {
+
+    // MÉTODOS
+
+    /**
+     * Arrow Function - Utilizada mandar los datos del formulario.
+     */
+    handlerSubmit = (event) => {
+        console.log('>> handlerSubmit()')
+        console.log(event)
+
+        // Utilizado para evitar recargar el formulario.
+        event.preventDefault()
+
+        const nombre = event.target[0].value
+        const email = event.target[1].value
+
+        // MANEJO DE DATOS
+        this.props.onSend( {nombre, email} )
+    }
+
+
+
+    // RENDER
+
+    /**
+     * Utilizado para renderizar los elementos.
+     *
+     * @returns - El elemento construido.
+     */
+    render () {
+        return(
+            <form onSubmit={this.handlerSubmit}>
+                <input type="text" placeholder='Nombre' />
+                <br/>
+                <input type="text" placeholder='E-mail' />
+                <br/>
+                <button>Enviar</button>
+            </form>
         )
     }
 
