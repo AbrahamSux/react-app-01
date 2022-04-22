@@ -6,6 +6,28 @@ import React, { Component } from "react";
 
 class InputControladoApp extends Component {
 
+    state = {
+        name: '',
+        email: ''
+    }
+
+
+
+    // MÉTODOS
+
+    /**
+     * Arrow Function - 
+     */
+    actualizar = (name, texto) => {
+        console.log(`>> actualizar(${texto})`)
+
+        this.setState( {
+            [name]: texto
+        } )
+    }
+
+
+
     // RENDER
 
     /**
@@ -19,7 +41,11 @@ class InputControladoApp extends Component {
                 <h1>
                     Inputs Controlados <Unicorn />
                 </h1>
-                <InputControlado />
+                <InputControlado name="name" onChange={this.actualizar} placeholder='Nombre Completo' />
+                <InputControlado name="email" onChange={this.actualizar} placeholder='Tu Email' />
+                <br/>
+                <h2>Nombre: {this.state.name}</h2>
+                <h2>E-mail: {this.state.email}</h2>
             </div>
         )
     }
@@ -45,6 +71,7 @@ class InputControlado extends Component {
      */
     actualizar = (event) => {
         console.log('>> actualizar() ')
+        console.log(this.props)
         console.log(event.target)
 
         const text = event.target.value
@@ -72,6 +99,9 @@ class InputControlado extends Component {
         this.setState({
             text, tieneError, color
         })
+
+        // PROPAGAR DATOS AL PADRE
+        this.props.onChange( this.props.name, text )
     }
 
 
@@ -93,7 +123,7 @@ class InputControlado extends Component {
 
         return (
             <div>
-                <input type="text" value={this.state.text} onChange={this.actualizar} style={styles} />
+                <input type="text" placeholder={this.props.placeholder} value={this.state.text} onChange={this.actualizar} style={styles} />
                 {this.state.tieneError ? null : <Correcto />}
             </div>
         )
