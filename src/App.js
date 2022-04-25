@@ -22,6 +22,7 @@ import ForwardrefApp from "./components/Refs/RefConForwardref";
 import InputNoControladoApp from "./components/ManejoFormularios/InputsNoControlados";
 import InputControladoApp from "./components/ManejoFormularios/InputControlado";
 import FormSelectApp from "./components/ManejoFormularios/FormularioSeleccion";
+import FormSelectMultipleApp from "./components/ManejoFormularios/FormSelectMultiple";
 
 
 
@@ -94,6 +95,9 @@ function App() {
      <br/>
      <hr/>
      <FormSelectApp />
+     <br/>
+     <hr/>
+     <FormSelectMultipleApp />
      <br/>
      <hr/>
      <IterarComponentesApp />
