@@ -24,6 +24,7 @@ import InputControladoApp from "./components/ManejoFormularios/InputControlado";
 import FormSelectApp from "./components/ManejoFormularios/FormularioSeleccion";
 import FormSelectMultipleApp from "./components/ManejoFormularios/FormSelectMultiple";
 import FormCheckboxApp from "./components/ManejoFormularios/FormCheckbox";
+import ComponentErrorApp from "./components/ControlErrores/ComponenteErrores";
 
 
 
@@ -102,6 +103,9 @@ function App() {
      <br/>
      <hr/>
      <FormCheckboxApp />
+     <br/>
+     <hr/>
+     <ComponentErrorApp />
      <br/>
      <hr/>
      <IterarComponentesApp />
