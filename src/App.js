@@ -21,6 +21,7 @@ import IntegrarLibreriaApp from "./components/Refs/IntegrarLibrerias";
 import ForwardrefApp from "./components/Refs/RefConForwardref";
 import InputNoControladoApp from "./components/ManejoFormularios/InputsNoControlados";
 import InputControladoApp from "./components/ManejoFormularios/InputControlado";
+import FormSelectApp from "./components/ManejoFormularios/FormularioSeleccion";
 
 
 
@@ -90,6 +91,9 @@ function App() {
      <br/>
      <hr/>
      <InputControladoApp />
+     <br/>
+     <hr/>
+     <FormSelectApp />
      <br/>
      <hr/>
      <IterarComponentesApp />
