@@ -23,6 +23,7 @@ import InputNoControladoApp from "./components/ManejoFormularios/InputsNoControl
 import InputControladoApp from "./components/ManejoFormularios/InputControlado";
 import FormSelectApp from "./components/ManejoFormularios/FormularioSeleccion";
 import FormSelectMultipleApp from "./components/ManejoFormularios/FormSelectMultiple";
+import FormCheckboxApp from "./components/ManejoFormularios/FormCheckbox";
 
 
 
@@ -98,6 +99,9 @@ function App() {
      <br/>
      <hr/>
      <FormSelectMultipleApp />
+     <br/>
+     <hr/>
+     <FormCheckboxApp />
      <br/>
      <hr/>
      <IterarComponentesApp />
