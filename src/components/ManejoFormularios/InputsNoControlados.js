@@ -125,10 +125,14 @@ class InputNoControladoForm extends Component {
     render () {
         return(
             <form onSubmit={this.handlerSubmit}>
-                <input type="text" placeholder='Nombre' />
-                <br/>
-                <input type="text" placeholder='E-mail' />
-                <br/>
+                <p>
+                    <label htmlFor='nombre'>Nombre: </label>
+                    <input id='nombre' type="text" placeholder='Nombre' />
+                </p>
+                <p>
+                    <label htmlFor="email">Email: </label>
+                    <input id="email" type="text" placeholder='E-mail' />
+                </p>
                 <button>Enviar</button>
             </form>
         )
