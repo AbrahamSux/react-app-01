@@ -25,6 +25,7 @@ import FormSelectApp from "./components/ManejoFormularios/FormularioSeleccion";
 import FormSelectMultipleApp from "./components/ManejoFormularios/FormSelectMultiple";
 import FormCheckboxApp from "./components/ManejoFormularios/FormCheckbox";
 import ComponentErrorApp from "./components/ControlErrores/ComponenteErrores";
+import APIRest from "./components/SolicitudesHTTP/API-Rest";
 
 
 
@@ -106,6 +107,9 @@ function App() {
      <br/>
      <hr/>
      <ComponentErrorApp />
+     <br/>
+     <hr/>
+     <APIRest />
      <br/>
      <hr/>
      <IterarComponentesApp />
